@@ -1,6 +1,4 @@
 {
   "$schema": "https://schema.railpack.com",
-  "packages": {
-    "meson": "1.3.2"
-  }
+  "buildCommand": "mkdir -p /build && meson setup /build -DNORIST=true && meson compile -C /build"
 }
